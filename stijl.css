@@ -1,0 +1,405 @@
+/*-------------------Nav----------------------*/
+#voor, #midden, #achter{
+  background-color: black;
+  height: 10px;
+  width: 45px;
+  border-radius: 50px;
+  transition-property: all;
+	transition-duration: 1s;
+}
+#voorwit, #middenwit, #achterwit{
+  background-color: white;
+  height: 10px;
+  width: 45px;
+  border-radius: 50px;
+  transition-property: all;
+	transition-duration: 1s;
+}
+
+#voor, #midden{  margin-bottom: 5px;}
+#voorwit, #middenwit{  margin-bottom: 5px;}
+
+#hamburger{
+  position: absolute;
+  right: 10%;
+  top:50px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#hamburgerbio{
+  position: absolute;
+  left: 50px;
+  top:100px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#hamburgerform{
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.visible{
+  visibility: hidden;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(87, 103, 127, 1);
+  transition: left 1s;
+  left: -800px;
+  top:0px;
+  z-index: 1
+}
+nav a{
+  font-size: 4rem;
+  display: block;
+  width: 100%;
+  padding:30px;
+  text-align: center;
+  background-color: rgba(87, 103, 127, 0.8);
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  /*border: 1px solid red;*/
+  margin-bottom: 10px;
+  transition: all;
+}
+nav a:hover{
+  color: white;
+}
+.schuiven{
+  left: 0px;
+
+}
+
+/*-------------------Nav----------------------*/
+/*-------------------Algemeen----------------------*/
+body{
+  background-image: url(Afb/afb1.jpg);
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background-position:  right;
+  background-attachment: fixed;
+}
+h3{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+p{
+  font-size: 2rem;
+}
+/*-------------------Algemeen----------------------*/
+/*-------------------form----------------------*/
+.iframe{
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 585px;
+  top: -10px;
+  margin: 12.5rem auto;
+}
+iframe{
+  position: absolute;
+  top: -10px;
+}
+/*-------------------form----------------------*/
+/*-------------------bio----------------------*/
+.biotekst div{
+  color: white;
+  text-align: justify;
+  width: 400px;
+  padding: 3rem;
+  background-color: rgba(87, 103, 127, 0.8);
+  margin: 2rem auto 2rem;
+}
+
+.foto img{
+  width: 34rem;
+}
+.social a img{
+  margin: auto 2rem;
+  width: 6rem;
+  transition: all 1s;
+}
+
+.social a img:hover{
+  border: .3rem solid white;
+  border-radius: 5rem;
+}
+/*-------------------bio----------------------*/
+/*-------------------HOME----------------------*/
+.galerij h3{
+  background-color: rgba(87, 103, 127, 0.8);
+  padding: 5rem;
+  width: 40rem;
+  margin: 2rem auto 2rem;
+}
+
+.galerij img{
+  background-color: rgba(87, 103, 127, 0.8);
+  display: block;
+  width: 40rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 3rem;
+}
+/*------------HOME----------------------*/
+/*------ButtonPijl----------------------*/
+
+
+.scroldown{
+  visibility: hidden;
+}
+.pijl0{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(90deg);
+  right: 5rem;
+  bottom: 5rem;
+}
+.pijl1{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(90deg);
+  right: 5rem;
+  bottom: -95rem;
+}
+.pijl2{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(90deg);
+  right: 5rem;
+  bottom: -195rem;
+}
+.pijl3{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(90deg);
+  right: 5rem;
+  bottom: -295rem;
+}
+.pijl4{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(-90deg);
+  right: 5rem;
+  bottom: -350rem;
+}
+.pijlbio0{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) ;
+  left: 5rem;
+  bottom: 5rem;
+  visibility: hidden;
+}
+.pijlbio1{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) ;
+  left: 105vw;
+  bottom: 5rem;
+  visibility: hidden;
+}
+.pijlbio2{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(180deg);
+  left: 260vw;
+  bottom: 5rem;
+  visibility: hidden;
+}
+
+.overflow{
+  position: absolute;
+  overflow: hidden;
+  height: 10rem;
+  width: 5rem;
+  background-color: white;
+  left:50%;
+  top: 0%
+}
+.driehoek{
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+  transform: rotate(45deg);
+  left:-50%;
+  top:25%;
+  border-radius: .5rem;
+
+}
+.vierkant{
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
+}
+.balk{
+  position: absolute;
+  background-color: black;
+  height: 3rem;
+  width: 5rem;
+  top: 35%;
+  left: 15%;
+  border-radius: .5rem;
+}
+
+
+/*-------------------ButtonPijl----------------------*/
+@media (min-width:700px) {
+  .scroldown{ visibility: visible;}
+  nav{
+    width: 28rem;
+    font-size: 5rem;
+  }
+}
+@media (min-width:1200px) {
+
+
+  .biotekst{
+    column-count: 3;
+    column-gap: 1rem;
+    column-rule-style: groove;
+    column-fill:auto;
+    margin-top: 20rem;
+    height: 41rem;
+    max-width: 390rem
+  }
+
+  .galerij  img{
+    background-color: rgba(87, 103, 127, 0);
+  }
+  .galerij  h3{
+    font-size: 8rem;
+    background-color: rgba(87, 103, 127, 0);
+    margin-top: 25%;
+  }
+  .galerij img{ height: 40rem;}
+  .galerij{ margin-top: 5rem;}
+  .logos{
+    background-color:rgba(87, 103, 127, 0.8);
+    width: 130rem;
+    display: grid;
+    grid-gap: 2rem;
+    margin: 0rem auto 15rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Posters{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    width: 130rem;
+    margin:  0rem auto 5rem;
+    background-color:  rgba(87, 103, 127, 0.8);
+  }
+  .Posters img{
+    grid-column:2 / 4;
+    width: auto;
+  }
+
+  .Fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    width: 130rem;
+    margin: 0rem auto 10rem;
+    background-color:  rgba(87, 103, 127, 0.8);
+  }
+  .Atss{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 2rem;
+    width: 130rem;
+    margin:  0rem auto 5rem;
+    background-color:  rgba(87, 103, 127, 0.8);
+      }
+  .Atss img, .Atss h3{
+          grid-row: 1/3;
+          height: auto;}
+  .Atss h3{ margin-top: 40%}
+  .pijl0:hover{
+          animation: naarEen .75s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;}
+  .pijl1:hover{
+          animation: naarTwee 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;}
+  .pijl2{ display: none;}
+  .pijl3{ display: none;}
+  .pijl4{ bottom: -165rem;}
+  .pijl4:hover{
+          animation: opEnNeer 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;}
+  .pijlbio0{
+    visibility: visible;
+    animation: naarRechtsEen 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .pijlbio1{
+    visibility: visible;
+    animation: naarRechtsTwee 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .pijlbio2{
+    visibility: visible;
+    animation: naarLinksEen 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes naarEen {
+    0%{   bottom: 5rem;}
+    50%{  bottom: 4rem;}
+    100%{ bottom: 5rem;}
+  }
+  @keyframes naarTwee {
+    0%{   bottom:-95rem;}
+    50%{  bottom:-94rem;}
+    100%{ bottom:-95rem;}
+  }
+  @keyframes opEnNeer {
+    0%{   bottom:-165rem;}
+    50%{  bottom:-164rem;}
+    100%{ bottom:-165rem;}
+  }
+  @keyframes naarRechtsEen {
+    0%{   left: 5rem;}
+    50%{  left: 6rem;}
+    100%{ left: 5rem;}
+  }
+  @keyframes naarRechtsTwee {
+    0%{   left: 105vw;}
+    50%{  left: 106vw;}
+    100%{ left: 105vw;}
+  }
+  @keyframes naarLinksEen {
+    0%{   left: 260vw;}
+    50%{  left: 259vw;}
+    100%{ left: 260vw;}
+  }
+
+
+}
