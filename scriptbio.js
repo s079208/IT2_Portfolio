@@ -47,5 +47,15 @@ function button1() {
    });
   event.preventDefault();
 }
+mijnKnoppen[2].addEventListener("click",button2  )
+function button2() {
+  console.log("button2 werkt");
+  window.scroll({
+    top: 0,
+    left: 3600,
+    behavior: 'smooth'
+   });
+  event.preventDefault();
+}
 
 /*-------------------buttons----------------------*/
